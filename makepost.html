@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/da289bebbf.js" crossorigin="anonymous"></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/login.js" defer></script>
+    <script src="./js/makepost.js" defer></script>
+    <script src="./js/auth.js"></script>
+    <title>Create Post</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <a href="./index.html"
+            ><img src="./media/logo/fitfution.logo.png" alt="logo"
+          /></a>
+          <div class="header-btns">
+              <a href="./admin.html"><i class="fa-solid fa-user"></i></a>
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <nav class="nav-menu">
+              <a href="./index.html" class="active-nav">Home</a>
+              <a href="./blog.html">Blog</a>
+          </nav>
+        </div>
+      </header>
+    <main>
+      <form id="makePostForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="body">Body:</label>
+        <textarea name="body" id="body" cols="30" rows="10"></textarea>
+
+        <label for="mediaUrl">Media URL:</label>
+        <input type="text" name="mediaUrl" id="mediaUrl">
+
+        <button id="SubmitPostBtn" type="submit">Create Post</button>
+      </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
