@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 });
 
+
 // Add event listener til login formet
 const loginForm = document.getElementById("login");
 if (loginForm) {
@@ -59,7 +60,16 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.removeItem("name");
 
             // sender bruker til login page
-            window.location.href = "login.html";
+            window.location.href = "/account/login.html";
         });
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logoutBtn = document.getElementById('logoutBtn');
+    const token = localStorage.getItem('token');
+
+    if (token) {
+        logoutBtn.style.display = 'block'; // viser log ut knappen hvis det er token 
+    } 
 });

@@ -18,14 +18,15 @@
             ><img src="../media/logo/fitfution.logo.png" alt="logo"
           /></a>
           <div class="header-btns">
+            <button id="logoutBtn">Logout</button>
               <a href="../account/admin.html" id="signInLink"><i class="fa-solid fa-user"></i></a>
             <button class="hamburger">
               <div class="bar"></div>
             </button>
           </div>
           <nav class="nav-menu">
-              <a href="../index.html" class="active-nav">Home</a>
-              <a href="../blog.html">Blog</a>
+              <a href="../index.html">Home</a>
+              <a href="../post/index.html">Blog</a>
           </nav>
         </div>
       </header>
@@ -38,7 +39,7 @@
         <textarea name="body" id="body" cols="30" rows="10"></textarea>
 
         <label for="mediaUrl">Media URL:</label>
-        <input type="text" name="mediaUrl" id="mediaUrl">
+        <input type="text" name="mediaUrl" id="mediaUrl" required>
 
         <button id="SubmitPostBtn" type="submit">Create Post</button>
       </form>

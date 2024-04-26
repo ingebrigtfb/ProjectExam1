@@ -34,12 +34,14 @@ function displayPosts(posts) {
         const bodyElement = document.createElement('p');
         bodyElement.textContent = post.body;
 
-        const imageElement = document.createElement('img');
-        imageElement.src = post.media.url;
-
         postElement.appendChild(titleElement);
         postElement.appendChild(bodyElement);
-        postElement.appendChild(imageElement);
+
+        if (post.media && post.media.url) {
+            const imageElement = document.createElement('img');
+            imageElement.src = post.media.url;
+            postElement.appendChild(imageElement);
+        }
 
         postsContainer.appendChild(postElement);
     });
@@ -47,3 +49,6 @@ function displayPosts(posts) {
 }
 
 window.onload = fetchDisplayPosts;
+
+
+
