@@ -170,6 +170,11 @@ header img {
 /* ADMIN */
 /*********/
 
+#logoutBtn {
+    font-size: 20px;
+}
+
+
 .greetings {
     display: flex;
     flex-direction: row;
@@ -177,6 +182,34 @@ header img {
     justify-content: center;
     gap: 10px;
 }
+
+.post {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 300px;
+    align-items: left;
+    border: 4px solid;
+    margin: 30px auto;
+}
+
+.post img {
+    width: 100px;
+    margin: 0 30px;
+}
+
+.post h2 {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.post body {
+    margin: 0 30px;
+}
+
+
+
+
 
 
 /*************/
