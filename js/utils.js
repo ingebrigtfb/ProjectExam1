@@ -19,3 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+//FUNCTION FOR Å HENTE FREM POSTSA
+async function fetchDisplayPosts() {
+    const url = 'https://v2.api.noroff.dev/blog/posts/ingebrigt_fb';
+
+    try {
+        const response = await fetch(url);
+
+        if (response.ok) {
+            const postData = await response.json();
+            displayPosts(postData.data);
+        } else {
+            console.error('Could not fetch posts', response.statusText);
+        }
+    } catch (error) {
+        console.error('Error fetching the posts', error)
+    }
+}
