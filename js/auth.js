@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     if (currentPage.includes("admin.html") && !token) {
         window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
     }
+    if (currentPage.includes("make.html") && !token) {
+        window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
+    }
+    if (currentPage.includes("edit.html") && !token) {
+        window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
+    }
 });
 
 

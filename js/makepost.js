@@ -1,8 +1,6 @@
 //FUNKSJON FOR Å LAGE POSTS
-
 document.addEventListener("DOMContentLoaded", function () {
   const makePostForm = document.getElementById("makePostForm"); //hente inn id fra form
-  const submitPostBtn = document.getElementById("SubmitPostBtn"); //hente inn id fra submit knapp
 
   makePostForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -11,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.getElementById("title").value;
     const body = document.getElementById("body").value;
     const mediaUrl = document.getElementById("mediaUrl").value;
+    const mediaAlt = document.getElementById("mediaAlt").value;
+
 
     // se om det er noen token
     const token = localStorage.getItem("token");
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       body: body,
       media: {
         url: mediaUrl,
+        alt: mediaAlt,
       },
     };
 
@@ -52,4 +53,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
 
