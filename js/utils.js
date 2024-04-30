@@ -19,10 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 //FUNCTION FOR Å HENTE FREM POSTSA
-async function fetchDisplayPosts() {
+    async function fetchDisplayPosts() {
     const url = 'https://v2.api.noroff.dev/blog/posts/ingebrigt_fb';
 
     try {

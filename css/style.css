@@ -4,6 +4,7 @@
 :root {
     --red : #B90000;
     --background-white : #FAFAFA;
+    --yellow : #FFE500;
     --open-sans : "Open Sans", sans-serif;
     --oswald: "Oswald", sans-serif;
 
@@ -21,7 +22,7 @@ body {
     grid-template-columns: 100%;
   }
 
-  p, a {
+  p {
     font-family: var(--open-sans) ;
   }
 
@@ -29,7 +30,7 @@ body {
     background-color: #F0F0F0;
   }
 
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, a {
     font-family: var(--oswald);
     font-weight: bold;
     font-size: 30px;
@@ -54,6 +55,8 @@ header img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 
 
 }
@@ -175,6 +178,36 @@ header img {
     display: none;
 }
 
+.createPostBtn {
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: var(--red);
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.createPostBtn {
+    font-weight: 600;
+
+}
+
+.createPostBtn:hover {
+    background-color: transparent;
+    color: black;
+    transition: 0.5ms;
+
+}
+
+.adminContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 
 .greetings {
     display: flex;
@@ -190,7 +223,7 @@ header img {
     flex-direction: row;
     justify-content: space-between;
     width: 400px;
-    height: 200px;
+    height: 300px;
     align-items: center;
     border: 2px solid;
     padding: 0 30px;
@@ -202,7 +235,8 @@ header img {
 }
 
 .postAdmin h2 {
-    text-align: center;
+    font-size: 20px;
+    padding: 0 40px;
 }
 
 .postAdmin button {
@@ -224,22 +258,32 @@ header img {
     width: 250px;
     height: 380px;
     align-items: center;
-    border: 2px solid;
+    justify-content: space-between;
     margin: 30px auto;
+    background-color: var(--red);
 }
 
 .post img {
-    width: 100px;
-    margin: 30px auto;
+    width: 200px;
+    margin: 20px auto;
 }
 
 .post h2 {
-    margin: 0 30px;
+    color: white;
     text-align: center;
+    font-size: 20px;
+    padding: 0 20px;
 }
 
 .post a {
     font-size: 18px;
+    padding: 5px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+    margin: 20px auto;
 }
 
 
@@ -277,4 +321,81 @@ header img {
 #editPostForm button {
     width: 100px;
     margin: 10px auto;
+}
+
+
+/*****************/
+/* Spesific POST */
+/*****************/
+
+.spesPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+
+}
+
+.spesPost img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+/*stor desktop*/
+@media screen and (min-width: 1100px){
+
+    
+    
+    /***************
+          Nav
+    ****************/
+    
+    .hamburger {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 0;
+        padding: 0;
+        background-color: transparent;
+        transition: none;
+        z-index: 10;
+    }
+    .nav-menu.is-active {
+        top: 50px;
+        overflow: visible;
+        transform: 0;
+      }
+    
+    
+    .nav-menu a {
+        font-size: 22px;
+        color: white;
+    
+    }
+
 }
