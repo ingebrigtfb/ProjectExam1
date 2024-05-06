@@ -36,6 +36,12 @@ body {
     font-size: 30px;
   }
 
+ .loading {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+ }
+
 
 /***************
       Header
@@ -186,13 +192,24 @@ header img {
     text-decoration: none;
     color: white;
     border-radius: 10px;
-
-}
-
-.createPostBtn {
     font-weight: 600;
 
 }
+
+.postAdmin button {
+    background-color: var(--red);
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 5px;
+
+
+}
+
 
 .createPostBtn:hover {
     background-color: transparent;
@@ -220,13 +237,13 @@ header img {
 
 .postAdmin {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     align-items: center;
     border: 2px solid;
-    padding: 0 30px;
+    padding: 30px 30px;
     margin: 30px auto;
 }
 
@@ -242,53 +259,6 @@ header img {
 .postAdmin button {
     font-size: 18px;
 }
-
-
-
-
-
-/**************************/
-/* Blog page (POST/INDEX) */
-/**************************/
-
-
-.post {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 380px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px auto;
-    background-color: var(--red);
-}
-
-.post img {
-    width: 200px;
-    margin: 20px auto;
-}
-
-.post h2 {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 0 20px;
-}
-
-.post a {
-    font-size: 18px;
-    padding: 5px 5px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    border: solid 1px white;
-    color: white;
-    margin: 20px auto;
-}
-
-
-
-
 
 /*************/
 /* MAKE POST */
@@ -322,6 +292,130 @@ header img {
     width: 100px;
     margin: 10px auto;
 }
+
+
+
+/*********/
+/* Index */
+/*********/
+
+.slide-content-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.slide-content-inner img {
+    width: 100%;
+}
+
+.more-btn {
+    position: absolute;
+    margin: 90% 0 0 0;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.post-title {
+    position: absolute;
+    color: white;
+    margin: 0 0 0 0;
+    font-size: 34px;
+    padding: 10px 30px;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: hwb(0 0% 100% / 0.611);
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.prev {
+    position: absolute;
+    color: white;
+    background-color: var(--red);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    height: 80px;
+    width: 25px;
+    margin: 0 85% 0 0;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    color: white;
+    background-color: var(--red);
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 80px;
+    width: 25px;
+    font-size: 50px;
+    margin: 0 0 0 85%;
+    cursor: pointer;
+}
+
+
+
+
+
+/**************************/
+/* Blog page (POST/INDEX) */
+/**************************/
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    background-color: var(--red);
+}
+
+.post img {
+    width: 130px;
+    max-height: auto;
+    margin: 20px auto;
+}
+
+.post h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.post a {
+    font-size: 18px;
+    padding: 5px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+    margin: 20px auto;
+}
+
 
 
 /*****************/

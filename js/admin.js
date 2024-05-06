@@ -8,11 +8,33 @@ if(usernameData) {
     document.getElementById('userName').innerText = 'No data'
 }
 
+//FUNCTION FOR Å HENTE FREM POSTSA
+async function fetchDisplayPosts() {
+    const outElement = document.getElementById("adminPostCont");
+    if (outElement !== "none") {
+      outElement.innerHTML = `<div class="loading">Loading...</div>`;
+    }
+    const url = "https://v2.api.noroff.dev/blog/posts/ingebrigt_fb";
+  
+    try {
+      const response = await fetch(url);
+  
+      if (response.ok) {
+        const postData = await response.json();
+        displayPosts(postData.data);
+      } else {
+        console.error("Could not fetch posts", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error fetching the posts", error);
+    }
+  }
+
 //HVORDAN POSTENE SKAL SE UT PÅ ADMIN SIDEN
 function displayPosts(posts) {
-    const postsContainer = document.getElementById('postsContainer');
-
-    postsContainer.innerHTML = '';
+    const adminPostCont = document.getElementById('adminPostCont');
+    
+    adminPostCont.innerHTML = '';
 
     posts.forEach(post => {
         const postElement = document.createElement('div');
@@ -42,7 +64,7 @@ function displayPosts(posts) {
         postElement.appendChild(titleElement);
         postElement.appendChild(deleteBtn);
         postElement.appendChild(editBtn);
-        postsContainer.appendChild(postElement);
+        adminPostCont.appendChild(postElement);
     });
 
 }

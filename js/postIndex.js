@@ -1,5 +1,10 @@
+
 //FUNCTION FOR Å HENTE FREM POSTSA
 async function fetchDisplayPosts() {
+    const outElement = document.getElementById("postsContainer");
+  if (outElement !== "none") {
+    outElement.innerHTML = `<div class="loading">Loading...</div>`;
+  }
     const url = 'https://v2.api.noroff.dev/blog/posts/ingebrigt_fb';
 
     try {
