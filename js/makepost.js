@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const mediaUrl = document.getElementById("mediaUrl").value;
     const mediaAlt = document.getElementById("mediaAlt").value;
 
-
     // se om det er noen token
     const token = localStorage.getItem("token");
     if (!token) {

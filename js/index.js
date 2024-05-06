@@ -52,10 +52,10 @@ function displayCarouselPosts(posts) {
       3,
       posts.length
     )}</div>
-        <div class="slide-content-inner"> 
+        <div class="slide-content-inner">
             <img src="${post.media.url}">
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
             <div class="background-container"> 
             <h2 class="post-title">${post.title}</h2>
             <a class="more-btn" href="./post/spesific-post.html?postId=${
