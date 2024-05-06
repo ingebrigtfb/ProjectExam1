@@ -5,22 +5,28 @@ window.onload = fetchDisplayPosts;
 //FUNCTION FOR Å HENTE FREM POSTSA
 async function fetchDisplayPosts() {
   const outElement = document.getElementById("slideshowContainer");
-  if (outElement !== "none") {
+  if (outElement !== null) {
     outElement.innerHTML = `<div class="loading">Loading...</div>`;
   }
 
   const url = "https://v2.api.noroff.dev/blog/posts/ingebrigt_fb";
+
   try {
     const response = await fetch(url);
 
     if (response.ok) {
       const postData = await response.json();
-      displayPosts(postData.data);
-      displayCarouselPosts(postData.data);
+      if (postData.data.length > 0) {
+        displayPosts(postData.data);
+        displayCarouselPosts(postData.data);
+      } else {
+        outElement.innerHTML = `<div class="loading">No posts made :)</div>`;
+      }
     } else {
       console.error("Could not fetch posts", response.statusText);
     }
   } catch (error) {
+    outElement.innerHTML = `<div class="loading">Error fetching the posts. Please try again later.</div>`;
     console.error("Error fetching the posts", error);
   }
 }
