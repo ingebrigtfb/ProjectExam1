@@ -14,26 +14,19 @@
 <body>
     <header>
         <div class="header-container">
-          <a href="./index.html"
+          <a href="../index.html"
             ><img src="../media/logo/fitfution.logo.png" alt="logo"
           /></a>
           <div class="header-btns">
             <button id="logoutBtn">Logout</button>
               <a href="../account/admin.html" id="signInLink"><i class="fa-solid fa-user"></i></a>
-            <button class="hamburger">
-              <div class="bar"></div>
-            </button>
           </div>
-          <nav class="nav-menu">
-              <a href="../index.html">Home</a>
-              <a href="../post/index.html">Blog</a>
-          </nav>
         </div>
       </header>
     <main>
       <form id="makePostForm">
         <label for="title">Title:</label>
-        <input type="text" id="title" name="title" maxlength="50" required>
+        <input type="text" id="title" name="title" maxlength="70" required>
 
         <label for="body">Body:</label>
         <textarea name="body" id="body" cols="30" rows="10" maxlength="2000"></textarea required>

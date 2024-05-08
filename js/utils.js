@@ -1,5 +1,5 @@
 //Hamburger mny
-
+/*
 function hamburgerMenu() {
   const menuBtns = document.querySelectorAll(".hamburger");
   const mobileMenu = document.querySelector(".nav-menu");
@@ -17,5 +17,5 @@ function hamburgerMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   hamburgerMenu();
-});
+});*/
 
