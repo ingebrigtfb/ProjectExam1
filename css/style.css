@@ -19,13 +19,12 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 p {
   font-family: var(--open-sans);
@@ -85,83 +84,26 @@ a {
 }
 
 /***************
-      Nav
+      FOOTER
 ****************/
-/*
-.hamburger {
-    display: block;
-    width: 50px;
-    height: 35px;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-    padding-bottom: 40px;
+
+footer {
+  height: 140px;
+  background-color: var(--red);
 }
 
-.hamburger .bar, .hamburger::after, .hamburger::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0px;
-    transition: 0.4s;
-    border-radius: 5px;
-
+.footer-container img {
+  width: 134px;
 }
 
-.hamburger.is-active::before {
-    transform: rotate(-45deg) translate(-8px, 6px );
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: white;
 }
-
-.hamburger.is-active::after {
-    transform: rotate(45deg) translate(-9px, -8px );
-}
-
-.hamburger.is-active .bar {
-    opacity: 0;
-}
-
-.nav-menu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 100%;
-    width: 100%;
-    padding: 30px 0;
-    background-color: var(--background-white);
-    text-align: center;
-    z-index: 99;
-
-}
-
-.nav-menu.is-active {
-    top: 135px;
-    overflow: hidden;
-    transition: 0.4s;
-}
-
-
-.nav-menu a {
-    margin: 10px 0;
-    text-decoration: none;
-    color: var(--white);
-    font-size: 28px;
-
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-
-}
-
-.nav-menu .active-nav {
-    text-decoration: underline;
-}
-
-*/
 
 /*********/
 /* LOGIN */
@@ -283,7 +225,6 @@ button:focus {
   font-weight: 600;
 }
 
-
 .createPostBtn:hover {
   background-color: transparent;
   color: black;
@@ -309,10 +250,10 @@ button:focus {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 400px;
+  height: 420px;
   align-items: center;
   background-color: var(--red);
-  padding: 30px 30px;
+  padding: 30px 10px;
   margin: 30px auto;
 }
 
@@ -322,25 +263,25 @@ button:focus {
 
 .postAdmin h2 {
   font-size: 20px;
-  padding: 0 40px;
+  padding: 0 20px;
   color: white;
   text-transform: uppercase;
 }
 
 .postAdmin button {
-    font-size: 18px;
-    font: var(--oswald);
-    font-weight: bold;
-    background-color: transparent;
-    width: 80px;
-    height: 30px;
-    color: white;
-    border: none;
-    border: 1px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 5px 5px;
-  }
+  font-size: 18px;
+  font: var(--oswald);
+  font-weight: bold;
+  background-color: transparent;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 5px;
+}
 
 /*************/
 /* MAKE POST */
@@ -350,75 +291,104 @@ button:focus {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 50px auto;
+  margin: 30px auto;
   white-space: pre-wrap;
+  border: 2px solid black;
+  padding: 20px 50px;
 }
 
 #makePostForm input {
-    border-radius: 5px;
+  padding: 5px 5px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+#makePostForm label {
+  color: black;
 }
 
 #makePostForm textarea {
-    border-radius: 10px;
+  padding: 5px 5px;
+  border: 2px solid black;
+  max-width: 350px;
+  min-width: 200px;
 }
 
 #SubmitPostBtn {
   width: 100px;
   margin: 20px auto;
+  font-size: 14px;
   cursor: pointer;
-  padding: 5px 5px;
+  padding: 10px 5px;
   color: white;
   background-color: var(--red);
   border-style: none;
   border-radius: 10px;
 }
 
-
 /*************/
 /* EDIT POST */
 /*************/
 
 #editPostForm {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 50px auto;
-    white-space: pre-wrap;
-  }
-  
-  #editPostForm input {
-      border-radius: 5px;
-  }
-  
-  #editPostForm textarea {
-      border-radius: 10px;
-  }
-  
-  #SubmitEditBtn {
-    width: 100px;
-    margin: 20px auto;
-    cursor: pointer;
-    padding: 5px 5px;
-    color: white;
-    background-color: var(--red);
-    border-style: none;
-    border-radius: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 30px auto;
+  white-space: pre-wrap;
+  border: 2px solid black;
+  padding: 20px 50px;
+}
+
+#editPostForm input {
+  padding: 5px 5px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+#editPostForm label {
+  color: black;
+}
+
+#editPostForm textarea {
+  padding: 5px 5px;
+  border: 2px solid black;
+  max-width: 350px;
+  min-width: 200px;
+}
+
+#SubmitEditBtn {
+  width: 100px;
+  margin: 20px auto;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 5px;
+  color: white;
+  background-color: var(--red);
+  border-style: none;
+  border-radius: 10px;
+}
 
 /******************/
 /* Index carousel */
 /******************/
+
+#slideshowContainer {
+  max-width: 1400px;
+}
 
 .slide-content-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 700px;
 }
 
 .slide-content-inner img {
   width: 100%;
-  height: 700px;
+  height: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -447,7 +417,7 @@ button:focus {
   justify-content: center;
   position: absolute;
   background-color: hwb(0 0% 100% / 0.611);
-  width: 270px;
+  width: 300px;
   height: 400px;
   border-radius: 10px;
 }
@@ -462,7 +432,6 @@ button:focus {
   height: 80px;
   margin: 0 85% 0 0;
   width: 25px;
-
   cursor: pointer;
 }
 .next {
@@ -499,16 +468,21 @@ button:focus {
   height: 20px;
 }
 
-
 /***********************/
 /* Blog page All posts */
 /***********************/
+
+#allBlogPosts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
 
 .post {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 385px;
+  height: 400px;
   align-items: center;
   justify-content: space-between;
   margin: 20px auto;
@@ -517,7 +491,6 @@ button:focus {
 
 .post img {
   width: 200px;
-  max-height: auto;
   margin: 20px auto;
 }
 
@@ -558,16 +531,137 @@ button:focus {
 }
 
 .spesPost h2 {
-    font-size: 30px;
-    width: 80%;
+  font-size: 30px;
+  width: 80%;
 }
 
 .spesPost p {
-    font-size: 16px;
-    width: 80%;
-    white-space: pre-wrap;
+  font-size: 16px;
+  width: 80%;
+  white-space: pre-wrap;
+}
+
+/*liten desktop*/
+@media screen and (min-width: 800px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
+    font-size: 34px;
+  }
+
+  /*********/
+  /* ADMIN */
+  /*********/
+
+  .createPostBtn {
+    font-size: 24px;
+  }
+
+  #adminPostCont {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 50px;
+  }
+
+  .postAdmin h2 {
+    font-size: 24px;
+  }
+
+  /******************/
+  /* Index carousel */
+  /******************/
+
+  .background-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  /***********************/
+  /* Blog page All posts */
+  /***********************/
+
+  #allBlogPosts {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 80px;
+  }
+
+  .post {
+    margin: 5px auto;
+  }
 }
 
 /*stor desktop*/
 @media screen and (min-width: 1100px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
+    font-size: 38px;
+  }
+
+  /*********/
+  /* Admin */
+  /*********/
+
+  #adminPostCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 50px;
+  }
+  /******************/
+  /* Index carousel */
+  /******************/
+
+  .slide-content-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-content-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .more-btn {
+    margin: 200px 0 0 0;
+  }
+
+  .background-container {
+    width: 500px;
+    height: 300px;
+  }
+
+  .prev {
+    margin: 0 950px 0 0;
+  }
+  .next {
+    margin: 0 0 0 950px;
+  }
+
+  #slideshowDots {
+    margin-top: 700px;
+  }
+
+  /***********************/
+  /* Blog page All posts */
+  /***********************/
+
+  #allBlogPosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 90px;
+  }
+
+  .post {
+    margin: 5px auto;
+    height: 450px;
+  }
+
+  .post h2 {
+    font-size: 22px;
+  }
 }

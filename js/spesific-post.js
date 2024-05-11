@@ -41,7 +41,20 @@ function displayPostById(post) {
 
     var lastUpdated = "Last updated : "
     const dateElement = document.createElement('p');
-    dateElement.textContent = lastUpdated + post.updated;
+
+    var dateString = post.updated;
+
+    var date = new Date(dateString);
+
+    var year = date.getFullYear();
+    var month = (date.getMonth() + 1).toString().padStart(2, '0');
+    var day = date.getDate().toString().padStart(2, '0');
+    var hours = date.getHours().toString().padStart(2, '0');
+    var minutes = date.getMinutes().toString().padStart(2, '0');
+
+    var newFormat = lastUpdated + day + "-" + month + "-" + year + " " + hours + ":" + minutes;
+
+    dateElement.textContent = newFormat;
 
     const titleElement = document.createElement('h2');
     titleElement.textContent = post.title;
