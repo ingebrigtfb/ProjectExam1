@@ -46,9 +46,10 @@ function adminDisplayPosts(posts) {
     const postElement = document.createElement("div");
     postElement.classList.add("postAdmin");
 
-    if (post.media && post.media.url) {
+    if (post.media && post.media.url && post.media.alt) {
       const imageElement = document.createElement("img");
       imageElement.src = post.media.url;
+      imageElement.alt = post.media.alt;
       postElement.appendChild(imageElement);
     }
 

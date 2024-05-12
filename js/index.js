@@ -165,9 +165,10 @@ function displayAllPosts(posts) {
       `<span style="color: ${yellowColor};">${randomWord}</span>`
     );
 
-    if (post.media && post.media.url) {
+    if (post.media && post.media.url && post.media.alt) {
       const imageElement = document.createElement("img");
       imageElement.src = post.media.url;
+      imageElement.alt = post.media.alt;
       postElement.appendChild(imageElement);
     }
 
