@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error creating post:", error);
+        window.alert("URL not valid")
       });
   });
 });

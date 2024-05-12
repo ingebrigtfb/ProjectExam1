@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => {
           console.error("Error editing post:", error);
+          window.alert("URL not valid")
         });
   
       });

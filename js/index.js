@@ -60,7 +60,7 @@ function displayCarouselPosts(posts) {
         longestWordIndex = i;
       }
     }
-
+    
     const longestWord = words[longestWordIndex];
 
     // gul farge
