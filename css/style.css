@@ -384,7 +384,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 
 .slide-content-inner img {
@@ -448,9 +448,6 @@ button:focus {
   margin: 0 0 0 85%;
   cursor: pointer;
 }
-.numbertext {
-  color: #b90000;
-}
 
 #slideshowDots {
   display: flex;
@@ -458,7 +455,7 @@ button:focus {
   gap: 2px;
   width: 60px;
   height: 20px;
-  margin-top: 650px;
+  margin-top: 600px;
 }
 
 .dot {
@@ -523,8 +520,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px auto;
-  max-width: 800px;
+  margin: 20px auto 100px auto;
+  max-width: 1000px;
 }
 
 .spesPost img {
