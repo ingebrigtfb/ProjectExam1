@@ -107,6 +107,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 1400px;
   padding: 0 20px;
   margin: 0 auto;
@@ -412,7 +413,7 @@ button:focus {
   justify-content: center;
   position: absolute;
   background-color: hwb(0 0% 100% / 0.611);
-  width: 300px;
+  width: 280px;
   height: 400px;
   border-radius: 10px;
 }
@@ -605,6 +606,55 @@ button:focus {
     grid-template-columns: 1fr 1fr auto;
     gap: 50px;
   }
+
+/*************/
+/* MAKE POST */
+/*************/
+
+#makePostForm {
+  max-width: none;
+  width: 800px;
+}
+
+#makePostform input {
+  max-width: 800px;
+}
+
+#makePostForm textarea {
+  max-width: 800px;
+  min-width: 200px;
+}
+
+#SubmitPostBtn {
+  font-size: 20px;
+  width: 120px;
+}
+
+/*************/
+/* EDIT POST */
+/*************/
+
+#editPostForm {
+  max-width: none;
+  width: 800px;
+}
+
+#editPostForm input {
+  max-width: 800px;
+}
+
+
+#editPostForm textarea {
+  max-width: 800px;
+  min-width: 200px;
+}
+
+#SubmitEditBtn {
+  font-size: 20px;
+  width: 120px;
+}
+
+
   /******************/
   /* Index carousel */
   /******************/
