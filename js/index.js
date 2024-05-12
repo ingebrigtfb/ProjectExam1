@@ -148,7 +148,8 @@ function displayAllPosts(posts) {
   allBlogPosts.innerHTML = "";
 
   posts.forEach((post) => {
-    const postElement = document.createElement("div");
+    const postElement = document.createElement("a");
+    postElement.href = `./post/spesific-post.html?postId=${post.id}`;
     postElement.classList.add("post");
 
     const words = post.title.split(" ");
