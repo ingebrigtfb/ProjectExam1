@@ -476,7 +476,7 @@ button:focus {
 #allBlogPosts {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin: 100px 0;
 }
 
 .post {
