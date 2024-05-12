@@ -40,7 +40,6 @@ function displayCarouselPosts(posts) {
   const slideshowContainer = document.getElementById("slideshowContainer");
   const dotsContainer = document.getElementById("slideshowDots");
 
-
   slideshowContainer.innerHTML = "";
   dotsContainer.innerHTML = "";
 
@@ -87,9 +86,6 @@ function displayCarouselPosts(posts) {
   });
 
   showSlides(slideIndex);
-
-
-
 
   slideInterval = setInterval(() => {
     slideIndex++;
@@ -191,5 +187,3 @@ function displayAllPosts(posts) {
   });
 
 }
-
-
