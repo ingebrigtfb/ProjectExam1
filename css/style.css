@@ -76,11 +76,18 @@ a {
 .header-btns {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .fa-solid {
   font-size: 36px;
   color: white;
+}
+
+.home-button {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
 }
 
 /***************
@@ -184,20 +191,6 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}
-
-.home-button a {
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 5px 5px;
-  font-size: 20px;
-}
-
-.home-button {
-  position: absolute;
-  top: 64px;
-  right: 20%;
 }
 
 /*********/
