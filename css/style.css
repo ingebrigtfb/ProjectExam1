@@ -12,7 +12,7 @@ body {
   background-color: #fafafa;
   margin: 0;
   padding: 0;
-  min-height: 120vh;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
@@ -188,16 +188,16 @@ button:focus {
 
 .home-button a {
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   padding: 5px 5px;
   font-size: 20px;
 }
 
 .home-button {
   position: absolute;
-  bottom: 50px;
-  right: 20px;
+  top: 5%;
+  right: 30%;
 }
 
 /*********/
