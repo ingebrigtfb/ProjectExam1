@@ -26,6 +26,8 @@ function displayPostById(post) {
     idPostContainer.innerHTML = '';
     console.log(post)
 
+    document.title = post.title;
+
     const postElement = document.createElement('div');
     postElement.classList.add('spesPost');
 
