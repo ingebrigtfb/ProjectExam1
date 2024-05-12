@@ -52,16 +52,24 @@ function displayCarouselPosts(posts) {
     slideContent.classList.add("slide-content");
 
     const words = post.title.split(" ");
-    const randomIndex = Math.floor(Math.random() * words.length);
-    const randomWord = words[randomIndex];
+    let longestWordIndex = 0; 
 
-    //farge for titel
+    // finner det lengeste ordet
+    for (let i = 1; i < words.length; i++) {
+      if (words[i].length > words[longestWordIndex].length) {
+        longestWordIndex = i;
+      }
+    }
+
+    const longestWord = words[longestWordIndex];
+
+    // gul farge
     const yellowColor = "#FFE500";
 
-    //setter en span rundt randomword
+    // Setter color span på lengste ordet
     const coloredTitle = post.title.replace(
-      randomWord,
-      `<span style="color: ${yellowColor};">${randomWord}</span>`
+      longestWord,
+      `<span style="color: ${yellowColor};">${longestWord}</span>`
     );
 
     slide.innerHTML = `
@@ -153,16 +161,23 @@ function displayAllPosts(posts) {
     postElement.classList.add("post");
 
     const words = post.title.split(" ");
-    const randomIndex = Math.floor(Math.random() * words.length);
-    const randomWord = words[randomIndex];
+    let longestWordIndex = 0; 
+
+    // finner det lengeste ordet
+    for (let i = 1; i < words.length; i++) {
+      if (words[i].length > words[longestWordIndex].length) {
+        longestWordIndex = i;
+      }
+    }
+    const longestWord = words[longestWordIndex];
 
     //farge for tittel
     const yellowColor = "#FFE500";
 
     //setter en span rundt randomword
     const coloredTitle = post.title.replace(
-      randomWord,
-      `<span style="color: ${yellowColor};">${randomWord}</span>`
+      longestWord,
+      `<span style="color: ${yellowColor};">${longestWord}</span>`
     );
 
     if (post.media && post.media.url && post.media.alt) {
