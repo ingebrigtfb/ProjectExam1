@@ -60,7 +60,7 @@ function displayCarouselPosts(posts) {
         longestWordIndex = i;
       }
     }
-    
+
     const longestWord = words[longestWordIndex];
 
     // gul farge
@@ -204,3 +204,17 @@ function displayAllPosts(posts) {
   });
 
 }
+
+
+let slideshowContainer = document.getElementById("slideshowContainer");
+
+slideshowContainer.addEventListener("mouseenter", () => {
+  clearInterval(slideInterval);
+});
+
+slideshowContainer.addEventListener("mouseleave", () => {
+  slideInterval = setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+  }, 5000);
+});

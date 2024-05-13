@@ -68,18 +68,9 @@ header img {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.header-container button,
-a {
-  margin: 0 20px;
-}
-
-.header-btns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .fa-solid {
   font-size: 36px;
@@ -91,6 +82,63 @@ a {
   color: white;
   font-size: 28px;
 }
+
+/***************
+      Nav
+****************/
+
+nav li {
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute; 
+  left: 100%;
+  top: 119px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 30px 30px;
+}
+
+.hamburger {
+  display: block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(14px) rotate(-45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-14px) rotate(45deg);
+}
+
 
 /***************
       FOOTER
@@ -202,6 +250,7 @@ button:focus {
 /*********/
 
 #logoutBtn {
+  width: 80px;
   font-size: 20px;
   padding: 5px 5px;
   display: none;
@@ -541,6 +590,32 @@ button:focus {
   font-size: 16px;
   width: 80%;
   white-space: pre-wrap;
+}
+
+
+@media screen and (min-width: 700px) {
+  /***************
+      Nav
+****************/
+.nav-menu {
+  position: static; 
+  width: auto; 
+  background-color: transparent; 
+  transition: none;
+}
+
+.nav-menu.active {
+  left: 0; 
+}
+
+.nav-item {
+  margin: 0 20px; 
+}
+
+.hamburger {
+  display: none; 
+}
+
 }
 
 /*liten desktop*/
