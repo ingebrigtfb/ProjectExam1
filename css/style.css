@@ -71,10 +71,10 @@ header img {
   padding: 0 20px;
 }
 
-
-.fa-solid {
+.fa-user {
   font-size: 36px;
   color: white;
+  display: block;
 }
 
 .home-button {
@@ -94,7 +94,8 @@ nav li {
 .nav-menu {
   display: flex;
   flex-direction: row;
-  position: absolute; 
+  align-items: center;
+  position: absolute;
   left: 100%;
   top: 119px;
   background-color: black;
@@ -105,9 +106,15 @@ nav li {
 
 .nav-menu.active {
   left: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .nav-item {
+  margin: 30px 30px;
+}
+
+.nav-logout button {
   margin: 30px 30px;
 }
 
@@ -139,7 +146,6 @@ nav li {
   transform: translateY(-14px) rotate(45deg);
 }
 
-
 /***************
       FOOTER
 ****************/
@@ -147,7 +153,6 @@ nav li {
 footer {
   height: 145px;
   background-color: var(--red);
-  
 }
 
 .footer-container img {
@@ -224,7 +229,7 @@ footer {
   border-bottom: 2px solid black;
 }
 
-#login .fa-solid,
+#login .fa-lock,
 .fa-regular {
   color: black;
   font-size: 20px;
@@ -271,6 +276,7 @@ button:focus {
   color: white;
   border-radius: 10px;
   font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .createPostBtn:hover {
@@ -283,6 +289,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px 0;
 }
 
 .greetings {
@@ -592,30 +599,29 @@ button:focus {
   white-space: pre-wrap;
 }
 
-
 @media screen and (min-width: 700px) {
   /***************
       Nav
 ****************/
-.nav-menu {
-  position: static; 
-  width: auto; 
-  background-color: transparent; 
-  transition: none;
-}
+  .nav-menu {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    transition: none;
+  }
 
-.nav-menu.active {
-  left: 0; 
-}
+  .nav-menu.active {
+    left: 0;
+  }
 
-.nav-item {
-  margin: 0 20px; 
-}
 
-.hamburger {
-  display: none; 
-}
+  .nav-item {
+    margin: 0 20px;
+  }
 
+  .hamburger {
+    display: none;
+  }
 }
 
 /*liten desktop*/
@@ -692,53 +698,51 @@ button:focus {
     gap: 50px;
   }
 
-/*************/
-/* MAKE POST */
-/*************/
+  /*************/
+  /* MAKE POST */
+  /*************/
 
-#makePostForm {
-  max-width: none;
-  width: 800px;
-}
+  #makePostForm {
+    max-width: none;
+    width: 800px;
+  }
 
-#makePostform input {
-  max-width: 800px;
-}
+  #makePostform input {
+    max-width: 800px;
+  }
 
-#makePostForm textarea {
-  max-width: 800px;
-  min-width: 200px;
-}
+  #makePostForm textarea {
+    max-width: 800px;
+    min-width: 200px;
+  }
 
-#SubmitPostBtn {
-  font-size: 20px;
-  width: 120px;
-}
+  #SubmitPostBtn {
+    font-size: 20px;
+    width: 120px;
+  }
 
-/*************/
-/* EDIT POST */
-/*************/
+  /*************/
+  /* EDIT POST */
+  /*************/
 
-#editPostForm {
-  max-width: none;
-  width: 800px;
-}
+  #editPostForm {
+    max-width: none;
+    width: 800px;
+  }
 
-#editPostForm input {
-  max-width: 800px;
-}
+  #editPostForm input {
+    max-width: 800px;
+  }
 
+  #editPostForm textarea {
+    max-width: 800px;
+    min-width: 200px;
+  }
 
-#editPostForm textarea {
-  max-width: 800px;
-  min-width: 200px;
-}
-
-#SubmitEditBtn {
-  font-size: 20px;
-  width: 120px;
-}
-
+  #SubmitEditBtn {
+    font-size: 20px;
+    width: 120px;
+  }
 
   /******************/
   /* Index carousel */

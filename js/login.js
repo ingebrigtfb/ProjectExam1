@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const token = localStorage.getItem("token");
 
-    const userIcon = document.querySelector(".header-btns a[href='./login.html']");
+    const userIcon = document.querySelector(".nav-item a[href='./login.html']");
 
     if (token && userIcon) {
         // hvis den finner token og iconet så oppdateres href pathen
