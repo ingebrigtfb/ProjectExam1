@@ -27,7 +27,7 @@ main {
 }
 
 p {
-  font-family: var(--open-sans);
+  font: var(--open-sans);
 }
 
 h1,
@@ -334,7 +334,7 @@ button:focus {
 
 .postAdmin button {
   font-size: 18px;
-  font: var(--oswald);
+  font-family: var(--oswald);
   font-weight: bold;
   background-color: transparent;
   width: 80px;
