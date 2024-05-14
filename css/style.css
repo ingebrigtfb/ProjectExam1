@@ -75,6 +75,7 @@ header img {
   font-size: 36px;
   color: white;
   display: block;
+
 }
 
 .home-button {
@@ -100,15 +101,15 @@ nav li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 119px;
   background-color: black;
   width: 100%;
   text-align: center;
-  transition: 0.3s;
   left: 0;
   padding: 0;
-  justify-content: center;
+  
 }
 
 .nav-item {
@@ -606,6 +607,7 @@ button:focus {
 ****************/
   .nav-menu {
     display: flex;
+    align-items: center;
     position: static;
     width: auto;
     background-color: transparent;
@@ -613,9 +615,12 @@ button:focus {
   }
 
   .nav-menu.active {
-    left: 0;
+    display: flex;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    transition: none;
   }
-
 
   .nav-item {
     margin: 0 20px;
