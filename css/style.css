@@ -611,36 +611,6 @@ button:focus {
   white-space: pre-wrap;
 }
 
-@media screen and (min-width: 700px) {
-/***************
-      Nav
-****************/
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    position: static;
-    width: auto;
-    background-color: transparent;
-    transition: none;
-  }
-
-  .nav-menu.active {
-    display: flex;
-    position: static;
-    width: auto;
-    background-color: transparent;
-    transition: none;
-  }
-
-  .nav-item {
-    margin: 0 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
-
 /*liten desktop*/
 @media screen and (min-width: 800px) {
   h1,
@@ -651,6 +621,37 @@ button:focus {
   a {
     font-size: 34px;
   }
+
+
+/***************
+      Nav
+****************/
+
+  
+.nav-menu {
+  display: flex;
+  align-items: center;
+  position: static;
+  width: auto;
+  background-color: transparent;
+  transition: none;
+}
+
+.nav-menu.active {
+  display: flex;
+  position: static;
+  width: auto;
+  background-color: transparent;
+  transition: none;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.hamburger {
+  display: none;
+}
 
   /*********/
   /* ADMIN */
