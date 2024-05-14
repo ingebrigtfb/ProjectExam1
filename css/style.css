@@ -92,19 +92,20 @@ nav li {
 }
 
 .nav-menu {
+  display: none;
+  left: 100%;
+}
+
+.nav-menu.active {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: absolute;
-  left: 100%;
   top: 119px;
   background-color: black;
   width: 100%;
   text-align: center;
   transition: 0.3s;
-}
-
-.nav-menu.active {
   left: 0;
   padding: 0;
   justify-content: center;
@@ -276,7 +277,7 @@ button:focus {
   color: white;
   border-radius: 10px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .createPostBtn:hover {
@@ -600,10 +601,11 @@ button:focus {
 }
 
 @media screen and (min-width: 700px) {
-  /***************
+/***************
       Nav
 ****************/
   .nav-menu {
+    display: flex;
     position: static;
     width: auto;
     background-color: transparent;
