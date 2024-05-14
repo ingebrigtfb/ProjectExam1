@@ -27,7 +27,7 @@ main {
 }
 
 p {
-  font: var(--open-sans);
+  font-family: var(--open-sans);
 }
 
 h1,
