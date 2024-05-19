@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 });
 
+(function() {
+    const token = localStorage.getItem("token");
+    if (token && window.location.pathname.endsWith('/login.html')) {
+        //Sender brukeren til admin siden hvis token er funnet og siden du er på er login.html
+        window.location.href = "admin.html";
+    }
+})();
+
 
 // Add event listener til login formet
 const loginForm = document.getElementById("login");
