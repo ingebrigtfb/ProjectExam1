@@ -15,19 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
+// ser om brukeren allerde er logget inn 
 document.addEventListener("DOMContentLoaded", function() {
-    // ser etter token i local storage
     const token = localStorage.getItem("token");
 
-    // hvis den finner token blir du sendt til admin 
-    if (token) {
-        const signInLink = document.getElementById("signInLink");
-        signInLink.addEventListener("click", function(event) {
-            event.preventDefault(); // forhinderer å sende deg til login 
-            window.location.href = "../account/admin.html"; // Sender deg til admin 
-        });
-    }
+    const userIcon = document.querySelector(".nav-item a[href='./login.html']");
+
+    if (token && userIcon) {
+        // hvis den finner token og iconet så oppdateres href pathen
+        userIcon.href = "admin.html";
+    } 
 });
+
+
 
 
