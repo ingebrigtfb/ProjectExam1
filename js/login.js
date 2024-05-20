@@ -1,10 +1,11 @@
 (function() {
     const token = localStorage.getItem("token");
-    if (token && window.location.pathname.endsWith('/login.html')) {
-        //Sender brukeren til admin siden hvis token er funnet og siden du er på er login.html
+    if (token && (window.location.pathname.endsWith('/login.html') || window.location.pathname.endsWith('/login'))) {
+        // Sender brukeren til admin siden hvis token er funnet og siden du er på er login.html
         window.location.href = "admin.html";
     }
 })();
+
 
 
 // Add event listener til login formet
