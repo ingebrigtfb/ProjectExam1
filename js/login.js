@@ -1,3 +1,15 @@
+// ser om brukeren allerde er logget inn 
+document.addEventListener("DOMContentLoaded", function() {
+    const token = localStorage.getItem("token");
+
+    const userIcon = document.querySelector(".nav-item a[href='./login.html']");
+
+    if (token && userIcon) {
+        // hvis den finner token og iconet så oppdateres href pathen
+        userIcon.href = "admin.html";
+    } 
+});
+
 (function() {
     const token = localStorage.getItem("token");
     if (token && window.location.pathname.endsWith('/login.html')) {
