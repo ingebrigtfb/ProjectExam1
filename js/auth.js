@@ -4,14 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentPage = window.location.pathname;
     const token = localStorage.getItem("token");
 
-    if (currentPage.includes("admin.html") && !token) {
-        window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
+    //Sender brukeren tilbake til login hvis man ikke har token
+    if ((currentPage.endsWith("/admin") || currentPage.endsWith("/admin.html")) && !token) {
+        window.location.href = "../account/login.html"; 
     }
-    if (currentPage.includes("make.html") && !token) {
-        window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
+    if ((currentPage.endsWith("/make") || currentPage.endsWith("/make.html")) && !token) {
+        window.location.href = "../account/login.html";
     }
-    if (currentPage.includes("edit.html") && !token) {
-        window.location.href = "../account/login.html"; // sender brukeren tilbake til login 
+    if ((currentPage.endsWith("/edit") || currentPage.endsWith("/edit.html")) && !token) {
+        window.location.href = "../account/login.html"; 
     }
 });
 
