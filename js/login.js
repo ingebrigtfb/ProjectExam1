@@ -33,7 +33,7 @@ if (loginForm) {
             const data = await response.json();
             const token = data.data.accessToken;
             const name = data.data.name;
-            console.log(data);
+            //console.log(data);
 
             localStorage.setItem("token", token);
             localStorage.setItem("name", name);

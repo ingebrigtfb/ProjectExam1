@@ -24,7 +24,7 @@ async function fetchPostById(postId) {
 function displayPostById(post) {
     const idPostContainer = document.getElementById('idPostContainer');
     idPostContainer.innerHTML = '';
-    console.log(post)
+    //console.log(post)
 
     document.title = post.title;
 

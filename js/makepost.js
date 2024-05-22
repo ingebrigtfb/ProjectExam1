@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return response.json();
       })
       .then((responseData) => {
-        console.log("Post created successfully:", responseData);
+        //console.log("Post created successfully:", responseData);
         window.location.href = "../account/admin.html"; //sender deg tilbake til admin etter posten er laget
         window.alert("Post is made");
       })

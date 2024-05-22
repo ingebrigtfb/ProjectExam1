@@ -96,7 +96,7 @@ async function deletePost(postId) {
     });
 
     if (response.ok) {
-      console.log("Post deleted successfully");
+      //console.log("Post deleted successfully");
 
       fetchDisplayPosts();
     } else {

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then((responseData) => {
         const postData = responseData.data;
-        console.log("postData:", postData);
+        //console.log("postData:", postData);
     
         //console.log("titleInput:", titleInput);
         //console.log("bodyInput:", bodyInput);
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return response.json();
         })
         .then((responseData) => {
-          console.log("Post edited successfully:", responseData);
+          //console.log("Post edited successfully:", responseData);
           window.location.href = "../account/admin.html"; // sender deg tilbake til admin når ferdig oppdatert
           window.alert("Post is edited");
         })
