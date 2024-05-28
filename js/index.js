@@ -1,7 +1,6 @@
 let slideInterval;
 
 
-
 //FUNCTION FOR Å HENTE FREM POSTSA
 async function fetchDisplayPosts() {
   const outElement = document.getElementById(
