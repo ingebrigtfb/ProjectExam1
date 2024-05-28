@@ -1,11 +1,12 @@
 let slideInterval;
 
+
+
 //FUNCTION FOR Å HENTE FREM POSTSA
 async function fetchDisplayPosts() {
   const outElement = document.getElementById(
     "slideshowContainer",
-    "allBlogPosts"
-  );
+    "allBlogPosts");
   if (outElement !== null) {
     outElement.innerHTML = `<div class="loading">Loading...</div>`;
   }
@@ -218,4 +219,4 @@ slideshowContainer.addEventListener("mouseleave", () => {
 });
 
 
-fetchDisplayPosts()
+window.onload = fetchDisplayPosts;
