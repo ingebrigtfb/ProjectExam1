@@ -1,7 +1,5 @@
 let slideInterval;
 
-window.onload = fetchDisplayPosts;
-
 //FUNCTION FOR Å HENTE FREM POSTSA
 async function fetchDisplayPosts() {
   const outElement = document.getElementById(
@@ -174,7 +172,7 @@ function displayAllPosts(posts) {
     //farge for tittel
     const yellowColor = "#FFE500";
 
-    //setter en span rundt randomword
+    //setter en span rundt longestword
     const coloredTitle = post.title.replace(
       longestWord,
       `<span style="color: ${yellowColor};">${longestWord}</span>`
@@ -218,3 +216,6 @@ slideshowContainer.addEventListener("mouseleave", () => {
     showSlides(slideIndex);
   }, 5000);
 });
+
+
+window.onload = fetchDisplayPosts;
