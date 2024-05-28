@@ -443,6 +443,7 @@ button:focus {
 
 #slideshowContainer {
   max-width: 1400px;
+  min-height: 600px;
 }
 
 .slide-content-inner {
@@ -519,11 +520,10 @@ button:focus {
 
 #slideshowDots {
   display: flex;
-  position: absolute;
+  position: relative;
   gap: 2px;
   width: 60px;
   height: 20px;
-  margin-top: 600px;
 }
 
 .dot {
@@ -772,7 +772,6 @@ button:focus {
   /* Index carousel */
   /******************/
 
-  
 
   .slide-content-inner img {
     max-width: 1200px;
@@ -795,9 +794,7 @@ button:focus {
     margin: 0 0 0 950px;
   }
 
-  #slideshowDots {
-    margin-top: 600px;
-  }
+  
 
   /***********************/
   /* Blog page All posts */
