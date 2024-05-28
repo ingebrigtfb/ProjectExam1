@@ -2,14 +2,33 @@
 document.addEventListener("DOMContentLoaded", function () {
   const makePostForm = document.getElementById("makePostForm"); //hente inn id fra form
 
+  const titleInput = document.getElementById("title");
+  const bodyInput = document.getElementById("body");
+  const titleCounter = document.getElementById("titleCounter");
+  const bodyCounter = document.getElementById("bodyCounter");
+
+  // title tekst counter
+  titleInput.addEventListener('input', () => {
+    const currentLength = titleInput.value.length;
+    titleCounter.textContent = `${currentLength}/70`;
+  });
+
+  // body tekst counter
+  bodyInput.addEventListener('input', () => {
+    const currentLength = bodyInput.value.length;
+    bodyCounter.textContent = `${currentLength}/2000`;
+  });
+
   makePostForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     // HENTE INN FORM data
-    const title = document.getElementById("title").value;
-    const body = document.getElementById("body").value;
+    const title = titleInput.value;
+    const body = bodyInput.value;
     const mediaUrl = document.getElementById("mediaUrl").value;
     const mediaAlt = document.getElementById("mediaAlt").value;
+
+    
 
     // se om det er noen token
     const token = localStorage.getItem("token");
