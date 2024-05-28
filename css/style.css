@@ -58,6 +58,7 @@ header {
 
 header img {
   width: 134px;
+  height: auto;
 }
 
 .header-container {
@@ -163,6 +164,7 @@ footer {
 
 .footer-container img {
   width: 134px;
+  height: auto;
 }
 
 .footer-container {
@@ -320,6 +322,7 @@ button:focus {
 
 .postAdmin img {
   width: 200px;
+  height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
 }
@@ -554,6 +557,7 @@ button:focus {
 
 .post img {
   width: 200px;
+  height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
   margin: 30px auto;
@@ -597,6 +601,7 @@ button:focus {
 
 .spesPost img {
   width: 80%;
+  height: auto;
 }
 
 .spesPost h2 {
