@@ -218,4 +218,4 @@ slideshowContainer.addEventListener("mouseleave", () => {
 });
 
 
-window.onload = fetchDisplayPosts;
+fetchDisplayPosts()
