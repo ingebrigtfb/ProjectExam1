@@ -772,6 +772,9 @@ button:focus {
   /* Index carousel */
   /******************/
 
+  #slideshowContainer {
+    height: 675px;
+  }
 
   .slide-content-inner img {
     max-width: 1200px;
