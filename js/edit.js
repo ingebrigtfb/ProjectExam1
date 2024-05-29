@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const titleCounter = document.getElementById("titleCounter");
   const bodyCounter = document.getElementById("bodyCounter");
 
-  //fikk hjelp fra stackoverflow på denne
   // funksjon som oppdaterer character counter
   function updateCounters() {
     titleCounter.textContent = `${titleInput.value.length}/70`;

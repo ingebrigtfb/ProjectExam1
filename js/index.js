@@ -58,7 +58,7 @@ function displayCarouselPosts(posts) {
         longestWordIndex = i;
       }
     }
-
+    //setter gulfarge på lengste ordet 
     const longestWord = words[longestWordIndex];
     const yellowColor = "#FFE500";
     const coloredTitle = post.title.replace(
@@ -66,7 +66,7 @@ function displayCarouselPosts(posts) {
       `<span style="color: ${yellowColor};">${longestWord}</span>`
     );
 
-    const img = new Image();  // lage et image element
+    const img = new Image();  
     img.src = post.media.url;
     img.alt = post.media.alt;
     img.onload = imageLoaded;  
@@ -81,7 +81,7 @@ function displayCarouselPosts(posts) {
       </div>
       </div>
     `;
-    slide.querySelector(".slide-content-inner").insertBefore(img, slide.querySelector(".prev"));  // New: Insert image before navigation buttons
+    slide.querySelector(".slide-content-inner").insertBefore(img, slide.querySelector(".prev")); 
     slide.appendChild(slideContent);
     slides.push(slide);
 
