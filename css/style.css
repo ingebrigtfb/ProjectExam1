@@ -364,6 +364,7 @@ button:focus {
 
 #makePostForm input {
   padding: 5px 5px;
+  margin-top: 10px;
   background-color: transparent;
   border: 2px solid black;
 }
@@ -374,6 +375,7 @@ button:focus {
 
 #makePostForm textarea {
   padding: 5px 5px;
+  margin-top: 10px;
   border: 2px solid black;
   max-width: 350px;
   min-width: 200px;
@@ -407,6 +409,7 @@ button:focus {
 
 #editPostForm input {
   padding: 5px 5px;
+  margin-top: 10px;
   background-color: transparent;
   border: 2px solid black;
 }
@@ -417,6 +420,7 @@ button:focus {
 
 #editPostForm textarea {
   padding: 5px 5px;
+  margin-top: 10px;
   border: 2px solid black;
   max-width: 350px;
   min-width: 200px;

@@ -1,4 +1,6 @@
 //Hamburger mny
+// litt inspo fra https://www.youtube.com/watch?v=OFKBep95lb4&t=466s
+// Og https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
